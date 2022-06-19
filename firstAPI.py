@@ -16,5 +16,5 @@ response3 = requests.get("https://api.lorem.space/image/game?w=150&h=220")
 print(response3.headers.get("Content-Type"))
 
 file = open("video-game.jpeg", "wb")
-file.write(response.content)
+file.write(response3.content)
 file.close()
